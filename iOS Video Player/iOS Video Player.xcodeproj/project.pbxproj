@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4212A9D01A210CF000B970EE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4212A9CF1A210CF000B970EE /* CoreVideo.framework */; };
+		4212A9D21A210D3400B970EE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4212A9D11A210D3400B970EE /* MediaPlayer.framework */; };
+		427F4FDF1A4DD0BE004A2C66 /* HKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F4FDE1A4DD0BE004A2C66 /* HKUtility.m */; };
+		427F4FE11A4DDB5D004A2C66 /* HKVideoPlayerClassicalTheme_NonSizeClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427F4FE01A4DDB5D004A2C66 /* HKVideoPlayerClassicalTheme_NonSizeClass.xib */; };
+		42B69F7A1A27AE830093F2EB /* HKVideoPlayerGreenTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B69F791A27AE830093F2EB /* HKVideoPlayerGreenTheme.m */; };
+		42EBF2B31A205E93006AF19C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2B21A205E93006AF19C /* Foundation.framework */; };
+		42EBF2B51A205E93006AF19C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2B41A205E93006AF19C /* CoreGraphics.framework */; };
+		42EBF2B71A205E93006AF19C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2B61A205E93006AF19C /* UIKit.framework */; };
+		42EBF2BD1A205E93006AF19C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EBF2BB1A205E93006AF19C /* InfoPlist.strings */; };
+		42EBF2BF1A205E93006AF19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBF2BE1A205E93006AF19C /* main.m */; };
+		42EBF2C31A205E93006AF19C /* HKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBF2C21A205E93006AF19C /* HKAppDelegate.m */; };
+		42EBF2C61A205E93006AF19C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EBF2C41A205E93006AF19C /* Main_iPhone.storyboard */; };
+		42EBF2C91A205E93006AF19C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EBF2C71A205E93006AF19C /* Main_iPad.storyboard */; };
+		42EBF2CC1A205E93006AF19C /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBF2CB1A205E93006AF19C /* HKViewController.m */; };
+		42EBF2CE1A205E93006AF19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EBF2CD1A205E93006AF19C /* Images.xcassets */; };
+		42EBF2D51A205E93006AF19C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2D41A205E93006AF19C /* XCTest.framework */; };
+		42EBF2D61A205E93006AF19C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2B21A205E93006AF19C /* Foundation.framework */; };
+		42EBF2D71A205E93006AF19C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2B61A205E93006AF19C /* UIKit.framework */; };
+		42EBF2DF1A205E93006AF19C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EBF2DD1A205E93006AF19C /* InfoPlist.strings */; };
+		42EBF2E11A205E93006AF19C /* iOS_Video_PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBF2E01A205E93006AF19C /* iOS_Video_PlayerTests.m */; };
+		42EBF2FB1A2061B6006AF19C /* HKVideoPlayerDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBF2FA1A2061B6006AF19C /* HKVideoPlayerDefaultTheme.m */; };
+		42EBF2FD1A20630C006AF19C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2FC1A20630C006AF19C /* AVFoundation.framework */; };
+		42EBF2FF1A2063B3006AF19C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EBF2FE1A2063B3006AF19C /* QuartzCore.framework */; };
+		8431ACD71A2C2E2A00992FED /* HKVideoPlayerClassicalTheme.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8431ACD61A2C2E2A00992FED /* HKVideoPlayerClassicalTheme.xib */; };
+		8431ACDB1A2C32EA00992FED /* UIView+MHNibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 8431ACDA1A2C32EA00992FED /* UIView+MHNibLoading.m */; };
+		84588AA21A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AA11A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.m */; };
+		84588AA51A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AA41A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.m */; };
+		84588AA81A2702F400E73C20 /* HKVideoPlayerWinterTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AA71A2702F400E73C20 /* HKVideoPlayerWinterTheme.m */; };
+		84588ACB1A27336900E73C20 /* HKVideoPlayerCoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588ABE1A27336900E73C20 /* HKVideoPlayerCoreView.m */; };
+		84588ACC1A27336900E73C20 /* HKVideoPlayerException.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AC21A27336900E73C20 /* HKVideoPlayerException.m */; };
+		84588ACD1A27336900E73C20 /* HKVideoPlayerThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AC61A27336900E73C20 /* HKVideoPlayerThemeView.m */; };
+		84588ACF1A27336900E73C20 /* UIViewController+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588ACA1A27336900E73C20 /* UIViewController+Draggable.m */; };
+		84588AD31A27337600E73C20 /* HKVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84588AD11A27337600E73C20 /* HKVideoPlayerViewController.m */; };
+		84588AD51A2735F800E73C20 /* HKVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84588AD41A2735F800E73C20 /* HKVideoPlayer.bundle */; };
+		846B229E1A28446D003F2CED /* HKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B229D1A28446D003F2CED /* HKLog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42EBF2D81A205E93006AF19C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EBF2A71A205E93006AF19C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EBF2AE1A205E93006AF19C;
+			remoteInfo = "iOS Video Player";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4212A9CF1A210CF000B970EE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4212A9D11A210D3400B970EE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		427F4FDD1A4DD0BE004A2C66 /* HKUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKUtility.h; sourceTree = "<group>"; };
+		427F4FDE1A4DD0BE004A2C66 /* HKUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKUtility.m; sourceTree = "<group>"; };
+		427F4FE01A4DDB5D004A2C66 /* HKVideoPlayerClassicalTheme_NonSizeClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HKVideoPlayerClassicalTheme_NonSizeClass.xib; path = ../../Classes/Themes/HKVideoPlayerClassicalTheme_NonSizeClass.xib; sourceTree = "<group>"; };
+		42B69F781A27AE830093F2EB /* HKVideoPlayerGreenTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerGreenTheme.h; path = ../../Classes/Themes/HKVideoPlayerGreenTheme.h; sourceTree = "<group>"; };
+		42B69F791A27AE830093F2EB /* HKVideoPlayerGreenTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerGreenTheme.m; path = ../../Classes/Themes/HKVideoPlayerGreenTheme.m; sourceTree = "<group>"; };
+		42EBF2AF1A205E93006AF19C /* iOS Video Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Video Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EBF2B21A205E93006AF19C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42EBF2B41A205E93006AF19C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42EBF2B61A205E93006AF19C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42EBF2BA1A205E93006AF19C /* iOS Video Player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Video Player-Info.plist"; sourceTree = "<group>"; };
+		42EBF2BC1A205E93006AF19C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42EBF2BE1A205E93006AF19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42EBF2C01A205E93006AF19C /* iOS Video Player-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Video Player-Prefix.pch"; sourceTree = "<group>"; };
+		42EBF2C11A205E93006AF19C /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
+		42EBF2C21A205E93006AF19C /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
+		42EBF2C51A205E93006AF19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		42EBF2C81A205E93006AF19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		42EBF2CA1A205E93006AF19C /* HKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		42EBF2CB1A205E93006AF19C /* HKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		42EBF2CD1A205E93006AF19C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42EBF2D31A205E93006AF19C /* iOS Video PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Video PlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EBF2D41A205E93006AF19C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42EBF2DC1A205E93006AF19C /* iOS Video PlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Video PlayerTests-Info.plist"; sourceTree = "<group>"; };
+		42EBF2DE1A205E93006AF19C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42EBF2E01A205E93006AF19C /* iOS_Video_PlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Video_PlayerTests.m; sourceTree = "<group>"; };
+		42EBF2F91A2061B6006AF19C /* HKVideoPlayerDefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerDefaultTheme.h; path = ../../Classes/Themes/HKVideoPlayerDefaultTheme.h; sourceTree = "<group>"; };
+		42EBF2FA1A2061B6006AF19C /* HKVideoPlayerDefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerDefaultTheme.m; path = ../../Classes/Themes/HKVideoPlayerDefaultTheme.m; sourceTree = "<group>"; };
+		42EBF2FC1A20630C006AF19C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42EBF2FE1A2063B3006AF19C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8431ACD61A2C2E2A00992FED /* HKVideoPlayerClassicalTheme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HKVideoPlayerClassicalTheme.xib; path = ../../Classes/Themes/HKVideoPlayerClassicalTheme.xib; sourceTree = "<group>"; };
+		8431ACD91A2C32EA00992FED /* UIView+MHNibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MHNibLoading.h"; sourceTree = "<group>"; };
+		8431ACDA1A2C32EA00992FED /* UIView+MHNibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MHNibLoading.m"; sourceTree = "<group>"; };
+		84588AA01A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerClassicalTheme.h; path = ../../Classes/Themes/HKVideoPlayerClassicalTheme.h; sourceTree = "<group>"; };
+		84588AA11A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerClassicalTheme.m; path = ../../Classes/Themes/HKVideoPlayerClassicalTheme.m; sourceTree = "<group>"; };
+		84588AA31A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerWoodenTheme.h; path = ../../Classes/Themes/HKVideoPlayerWoodenTheme.h; sourceTree = "<group>"; };
+		84588AA41A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerWoodenTheme.m; path = ../../Classes/Themes/HKVideoPlayerWoodenTheme.m; sourceTree = "<group>"; };
+		84588AA61A2702F400E73C20 /* HKVideoPlayerWinterTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerWinterTheme.h; path = ../../Classes/Themes/HKVideoPlayerWinterTheme.h; sourceTree = "<group>"; };
+		84588AA71A2702F400E73C20 /* HKVideoPlayerWinterTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerWinterTheme.m; path = ../../Classes/Themes/HKVideoPlayerWinterTheme.m; sourceTree = "<group>"; };
+		84588ABD1A27336900E73C20 /* HKVideoPlayerCoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerCoreView.h; sourceTree = "<group>"; };
+		84588ABE1A27336900E73C20 /* HKVideoPlayerCoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKVideoPlayerCoreView.m; sourceTree = "<group>"; };
+		84588AC01A27336900E73C20 /* HKVideoPlayerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerEvent.h; sourceTree = "<group>"; };
+		84588AC11A27336900E73C20 /* HKVideoPlayerException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerException.h; sourceTree = "<group>"; };
+		84588AC21A27336900E73C20 /* HKVideoPlayerException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKVideoPlayerException.m; sourceTree = "<group>"; };
+		84588AC31A27336900E73C20 /* HKVideoPlayerFuntionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerFuntionality.h; sourceTree = "<group>"; };
+		84588AC41A27336900E73C20 /* HKVideoPlayerNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerNotifications.h; sourceTree = "<group>"; };
+		84588AC51A27336900E73C20 /* HKVideoPlayerThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerThemeView.h; sourceTree = "<group>"; };
+		84588AC61A27336900E73C20 /* HKVideoPlayerThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKVideoPlayerThemeView.m; sourceTree = "<group>"; };
+		84588AC71A27336900E73C20 /* HKVideoPlayerThemeViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKVideoPlayerThemeViewDelegate.h; sourceTree = "<group>"; };
+		84588AC91A27336900E73C20 /* UIViewController+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Draggable.h"; sourceTree = "<group>"; };
+		84588ACA1A27336900E73C20 /* UIViewController+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Draggable.m"; sourceTree = "<group>"; };
+		84588AD01A27337600E73C20 /* HKVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerViewController.h; path = ../../Classes/HKVideoPlayerViewController.h; sourceTree = "<group>"; };
+		84588AD11A27337600E73C20 /* HKVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKVideoPlayerViewController.m; path = ../../Classes/HKVideoPlayerViewController.m; sourceTree = "<group>"; };
+		84588AD21A27337600E73C20 /* HKVideoPlayerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKVideoPlayerViewControllerDelegate.h; path = ../../Classes/HKVideoPlayerViewControllerDelegate.h; sourceTree = "<group>"; };
+		84588AD41A2735F800E73C20 /* HKVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HKVideoPlayer.bundle; path = ../../Classes/Themes/HKVideoPlayer.bundle; sourceTree = "<group>"; };
+		846B229C1A28446D003F2CED /* HKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKLog.h; sourceTree = "<group>"; };
+		846B229D1A28446D003F2CED /* HKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKLog.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42EBF2AC1A205E93006AF19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4212A9D21A210D3400B970EE /* MediaPlayer.framework in Frameworks */,
+				4212A9D01A210CF000B970EE /* CoreVideo.framework in Frameworks */,
+				42EBF2FF1A2063B3006AF19C /* QuartzCore.framework in Frameworks */,
+				42EBF2FD1A20630C006AF19C /* AVFoundation.framework in Frameworks */,
+				42EBF2B51A205E93006AF19C /* CoreGraphics.framework in Frameworks */,
+				42EBF2B71A205E93006AF19C /* UIKit.framework in Frameworks */,
+				42EBF2B31A205E93006AF19C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EBF2D01A205E93006AF19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EBF2D51A205E93006AF19C /* XCTest.framework in Frameworks */,
+				42EBF2D71A205E93006AF19C /* UIKit.framework in Frameworks */,
+				42EBF2D61A205E93006AF19C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42EBF2A61A205E93006AF19C = {
+			isa = PBXGroup;
+			children = (
+				42EBF2B81A205E93006AF19C /* iOS Video Player */,
+				42EBF2DA1A205E93006AF19C /* iOS Video PlayerTests */,
+				42EBF2B11A205E93006AF19C /* Frameworks */,
+				42EBF2B01A205E93006AF19C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42EBF2B01A205E93006AF19C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EBF2AF1A205E93006AF19C /* iOS Video Player.app */,
+				42EBF2D31A205E93006AF19C /* iOS Video PlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EBF2B11A205E93006AF19C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4212A9D11A210D3400B970EE /* MediaPlayer.framework */,
+				4212A9CF1A210CF000B970EE /* CoreVideo.framework */,
+				42EBF2FE1A2063B3006AF19C /* QuartzCore.framework */,
+				42EBF2FC1A20630C006AF19C /* AVFoundation.framework */,
+				42EBF2B21A205E93006AF19C /* Foundation.framework */,
+				42EBF2B41A205E93006AF19C /* CoreGraphics.framework */,
+				42EBF2B61A205E93006AF19C /* UIKit.framework */,
+				42EBF2D41A205E93006AF19C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42EBF2B81A205E93006AF19C /* iOS Video Player */ = {
+			isa = PBXGroup;
+			children = (
+				42EBF2EA1A205FDC006AF19C /* Classes */,
+				42EBF2C11A205E93006AF19C /* HKAppDelegate.h */,
+				42EBF2C21A205E93006AF19C /* HKAppDelegate.m */,
+				42EBF2C41A205E93006AF19C /* Main_iPhone.storyboard */,
+				42EBF2C71A205E93006AF19C /* Main_iPad.storyboard */,
+				42EBF2CA1A205E93006AF19C /* HKViewController.h */,
+				42EBF2CB1A205E93006AF19C /* HKViewController.m */,
+				42EBF2CD1A205E93006AF19C /* Images.xcassets */,
+				42EBF2B91A205E93006AF19C /* Supporting Files */,
+			);
+			path = "iOS Video Player";
+			sourceTree = "<group>";
+		};
+		42EBF2B91A205E93006AF19C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EBF2BA1A205E93006AF19C /* iOS Video Player-Info.plist */,
+				42EBF2BB1A205E93006AF19C /* InfoPlist.strings */,
+				42EBF2BE1A205E93006AF19C /* main.m */,
+				42EBF2C01A205E93006AF19C /* iOS Video Player-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EBF2DA1A205E93006AF19C /* iOS Video PlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				42EBF2E01A205E93006AF19C /* iOS_Video_PlayerTests.m */,
+				42EBF2DB1A205E93006AF19C /* Supporting Files */,
+			);
+			path = "iOS Video PlayerTests";
+			sourceTree = "<group>";
+		};
+		42EBF2DB1A205E93006AF19C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EBF2DC1A205E93006AF19C /* iOS Video PlayerTests-Info.plist */,
+				42EBF2DD1A205E93006AF19C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EBF2EA1A205FDC006AF19C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8431ACD81A2C32EA00992FED /* 3rd-Parties */,
+				84588AD01A27337600E73C20 /* HKVideoPlayerViewController.h */,
+				84588AD11A27337600E73C20 /* HKVideoPlayerViewController.m */,
+				84588AD21A27337600E73C20 /* HKVideoPlayerViewControllerDelegate.h */,
+				84588ABC1A27336900E73C20 /* Core */,
+				42EBF2EE1A206040006AF19C /* Themes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		42EBF2EE1A206040006AF19C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				84588AD41A2735F800E73C20 /* HKVideoPlayer.bundle */,
+				42EBF2F91A2061B6006AF19C /* HKVideoPlayerDefaultTheme.h */,
+				42EBF2FA1A2061B6006AF19C /* HKVideoPlayerDefaultTheme.m */,
+				84588AA01A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.h */,
+				84588AA11A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.m */,
+				8431ACD61A2C2E2A00992FED /* HKVideoPlayerClassicalTheme.xib */,
+				427F4FE01A4DDB5D004A2C66 /* HKVideoPlayerClassicalTheme_NonSizeClass.xib */,
+				84588AA31A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.h */,
+				84588AA41A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.m */,
+				84588AA61A2702F400E73C20 /* HKVideoPlayerWinterTheme.h */,
+				84588AA71A2702F400E73C20 /* HKVideoPlayerWinterTheme.m */,
+				42B69F781A27AE830093F2EB /* HKVideoPlayerGreenTheme.h */,
+				42B69F791A27AE830093F2EB /* HKVideoPlayerGreenTheme.m */,
+			);
+			name = Themes;
+			sourceTree = "<group>";
+		};
+		8431ACD81A2C32EA00992FED /* 3rd-Parties */ = {
+			isa = PBXGroup;
+			children = (
+				8431ACD91A2C32EA00992FED /* UIView+MHNibLoading.h */,
+				8431ACDA1A2C32EA00992FED /* UIView+MHNibLoading.m */,
+			);
+			name = "3rd-Parties";
+			path = "../../Classes/3rd-Parties";
+			sourceTree = "<group>";
+		};
+		84588ABC1A27336900E73C20 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84588ABD1A27336900E73C20 /* HKVideoPlayerCoreView.h */,
+				84588ABE1A27336900E73C20 /* HKVideoPlayerCoreView.m */,
+				84588AC01A27336900E73C20 /* HKVideoPlayerEvent.h */,
+				84588AC11A27336900E73C20 /* HKVideoPlayerException.h */,
+				84588AC21A27336900E73C20 /* HKVideoPlayerException.m */,
+				84588AC31A27336900E73C20 /* HKVideoPlayerFuntionality.h */,
+				84588AC41A27336900E73C20 /* HKVideoPlayerNotifications.h */,
+				84588AC51A27336900E73C20 /* HKVideoPlayerThemeView.h */,
+				84588AC61A27336900E73C20 /* HKVideoPlayerThemeView.m */,
+				84588AC71A27336900E73C20 /* HKVideoPlayerThemeViewDelegate.h */,
+				84588AC91A27336900E73C20 /* UIViewController+Draggable.h */,
+				84588ACA1A27336900E73C20 /* UIViewController+Draggable.m */,
+				846B229C1A28446D003F2CED /* HKLog.h */,
+				846B229D1A28446D003F2CED /* HKLog.m */,
+				427F4FDD1A4DD0BE004A2C66 /* HKUtility.h */,
+				427F4FDE1A4DD0BE004A2C66 /* HKUtility.m */,
+			);
+			name = Core;
+			path = ../../Classes/Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42EBF2AE1A205E93006AF19C /* iOS Video Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EBF2E41A205E93006AF19C /* Build configuration list for PBXNativeTarget "iOS Video Player" */;
+			buildPhases = (
+				42EBF2AB1A205E93006AF19C /* Sources */,
+				42EBF2AC1A205E93006AF19C /* Frameworks */,
+				42EBF2AD1A205E93006AF19C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Video Player";
+			productName = "iOS Video Player";
+			productReference = 42EBF2AF1A205E93006AF19C /* iOS Video Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42EBF2D21A205E93006AF19C /* iOS Video PlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EBF2E71A205E93006AF19C /* Build configuration list for PBXNativeTarget "iOS Video PlayerTests" */;
+			buildPhases = (
+				42EBF2CF1A205E93006AF19C /* Sources */,
+				42EBF2D01A205E93006AF19C /* Frameworks */,
+				42EBF2D11A205E93006AF19C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EBF2D91A205E93006AF19C /* PBXTargetDependency */,
+			);
+			name = "iOS Video PlayerTests";
+			productName = "iOS Video PlayerTests";
+			productReference = 42EBF2D31A205E93006AF19C /* iOS Video PlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42EBF2A71A205E93006AF19C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "haikieu2907@gmail.com";
+				TargetAttributes = {
+					42EBF2D21A205E93006AF19C = {
+						TestTargetID = 42EBF2AE1A205E93006AF19C;
+					};
+				};
+			};
+			buildConfigurationList = 42EBF2AA1A205E93006AF19C /* Build configuration list for PBXProject "iOS Video Player" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42EBF2A61A205E93006AF19C;
+			productRefGroup = 42EBF2B01A205E93006AF19C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42EBF2AE1A205E93006AF19C /* iOS Video Player */,
+				42EBF2D21A205E93006AF19C /* iOS Video PlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EBF2AD1A205E93006AF19C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EBF2C91A205E93006AF19C /* Main_iPad.storyboard in Resources */,
+				42EBF2CE1A205E93006AF19C /* Images.xcassets in Resources */,
+				42EBF2C61A205E93006AF19C /* Main_iPhone.storyboard in Resources */,
+				427F4FE11A4DDB5D004A2C66 /* HKVideoPlayerClassicalTheme_NonSizeClass.xib in Resources */,
+				8431ACD71A2C2E2A00992FED /* HKVideoPlayerClassicalTheme.xib in Resources */,
+				84588AD51A2735F800E73C20 /* HKVideoPlayer.bundle in Resources */,
+				42EBF2BD1A205E93006AF19C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EBF2D11A205E93006AF19C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EBF2DF1A205E93006AF19C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EBF2AB1A205E93006AF19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84588AA81A2702F400E73C20 /* HKVideoPlayerWinterTheme.m in Sources */,
+				42EBF2CC1A205E93006AF19C /* HKViewController.m in Sources */,
+				84588ACD1A27336900E73C20 /* HKVideoPlayerThemeView.m in Sources */,
+				84588AA51A2702DD00E73C20 /* HKVideoPlayerWoodenTheme.m in Sources */,
+				84588AD31A27337600E73C20 /* HKVideoPlayerViewController.m in Sources */,
+				846B229E1A28446D003F2CED /* HKLog.m in Sources */,
+				84588AA21A2702CD00E73C20 /* HKVideoPlayerClassicalTheme.m in Sources */,
+				42B69F7A1A27AE830093F2EB /* HKVideoPlayerGreenTheme.m in Sources */,
+				84588ACC1A27336900E73C20 /* HKVideoPlayerException.m in Sources */,
+				42EBF2BF1A205E93006AF19C /* main.m in Sources */,
+				84588ACF1A27336900E73C20 /* UIViewController+Draggable.m in Sources */,
+				84588ACB1A27336900E73C20 /* HKVideoPlayerCoreView.m in Sources */,
+				42EBF2FB1A2061B6006AF19C /* HKVideoPlayerDefaultTheme.m in Sources */,
+				427F4FDF1A4DD0BE004A2C66 /* HKUtility.m in Sources */,
+				8431ACDB1A2C32EA00992FED /* UIView+MHNibLoading.m in Sources */,
+				42EBF2C31A205E93006AF19C /* HKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EBF2CF1A205E93006AF19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EBF2E11A205E93006AF19C /* iOS_Video_PlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42EBF2D91A205E93006AF19C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EBF2AE1A205E93006AF19C /* iOS Video Player */;
+			targetProxy = 42EBF2D81A205E93006AF19C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42EBF2BB1A205E93006AF19C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EBF2BC1A205E93006AF19C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42EBF2C41A205E93006AF19C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EBF2C51A205E93006AF19C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		42EBF2C71A205E93006AF19C /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EBF2C81A205E93006AF19C /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		42EBF2DD1A205E93006AF19C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EBF2DE1A205E93006AF19C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42EBF2E21A205E93006AF19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8670e0b1-cbd7-4c9e-a8dd-63e610dac854";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42EBF2E31A205E93006AF19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "8670e0b1-cbd7-4c9e-a8dd-63e610dac854";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42EBF2E51A205E93006AF19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Video Player/iOS Video Player-Prefix.pch";
+				INFOPLIST_FILE = "iOS Video Player/iOS Video Player-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42EBF2E61A205E93006AF19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Video Player/iOS Video Player-Prefix.pch";
+				INFOPLIST_FILE = "iOS Video Player/iOS Video Player-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42EBF2E81A205E93006AF19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS Video Player.app/iOS Video Player";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Video Player/iOS Video Player-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS Video PlayerTests/iOS Video PlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		42EBF2E91A205E93006AF19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS Video Player.app/iOS Video Player";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Video Player/iOS Video Player-Prefix.pch";
+				INFOPLIST_FILE = "iOS Video PlayerTests/iOS Video PlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42EBF2AA1A205E93006AF19C /* Build configuration list for PBXProject "iOS Video Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EBF2E21A205E93006AF19C /* Debug */,
+				42EBF2E31A205E93006AF19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EBF2E41A205E93006AF19C /* Build configuration list for PBXNativeTarget "iOS Video Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EBF2E51A205E93006AF19C /* Debug */,
+				42EBF2E61A205E93006AF19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EBF2E71A205E93006AF19C /* Build configuration list for PBXNativeTarget "iOS Video PlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EBF2E81A205E93006AF19C /* Debug */,
+				42EBF2E91A205E93006AF19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42EBF2A71A205E93006AF19C /* Project object */;
+}
