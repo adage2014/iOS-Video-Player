@@ -5,7 +5,7 @@ iOS Ultimate video player with customizable theme view, compatible to ipad as we
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SLWW2XYDATUYS" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Make donation for Hai Kieu's github"/></a>
 
-####Features Summary
+####Features Summary 2015
 
 #####1) Strong Player ViewController available
   + Easy to use and integrate with delegate [√]
